@@ -1,0 +1,9 @@
+file_format: "1"
+id: whn_1
+name: WHN 1
+type: shield
+url: https://github.com/whn54366/whn-nrf
+requires: [nice_nano]
+exposes: [i2c]
+features:
+  - keys

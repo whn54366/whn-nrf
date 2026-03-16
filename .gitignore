@@ -1,0 +1,21 @@
+# Ignore whn_1 directory as it's an embedded git repository
+whn_1/
+
+# Ignore ZMK build directory
+.zmk/
+
+# Ignore build artifacts
+build/
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore temporary files
+*.swp
+*.swo
+*~
+
+# Ignore OS generated files
+Thumbs.db
+.DS_Store
