@@ -54,14 +54,7 @@
     clock-frequency = <400000>;
 
     oled: oled@3c {
-        compatible = "solomon,ssd1306";
+        compatible = "zmk,oled-display";
         reg = <0x3c>;
-        width = <128>;
-        height = <64>;
-        segment-offset = <0>;
-        page-offset = <0>;
-        display-offset = <0>;
-        multiplex-ratio = <63>;
-        prechargep = <0x22>;
     };
 };
