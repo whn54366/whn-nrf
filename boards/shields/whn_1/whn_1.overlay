@@ -51,8 +51,8 @@
 &i2c0 {
     status = "okay";
     clock-frequency = <400000>;
-    sda-pin = <17>;
-    scl-pin = <20>;
+    sda-gpios = <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    scl-gpios = <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
 
     display0: display@3c {
         compatible = "solomon,ssd1306fb-i2c";
