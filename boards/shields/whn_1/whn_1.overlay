@@ -44,6 +44,7 @@
     chosen {
         zmk,physical-layout = &physical_layout0;
         zmk,kscan = &kscan0;
+        zephyr,display = &oled;
         zmk,display = &oled;
     };
 };
