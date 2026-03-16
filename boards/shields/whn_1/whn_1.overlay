@@ -44,7 +44,7 @@
     chosen {
         zmk,physical-layout = &physical_layout0;
         zmk,kscan = &kscan0;
-        zephyr,display = &display0;
+        zephyr,display = &ssd1306;
     };
 };
 
@@ -52,8 +52,8 @@
     status = "okay";
     clock-frequency = <400000>;
 
-    display0: display@3c {
-        compatible = "solomon,ssd1306fb-i2c";
+    ssd1306: ssd1306@3c {
+        compatible = "solomon,ssd1306";
         reg = <0x3c>;
         width = <128>;
         height = <64>;
