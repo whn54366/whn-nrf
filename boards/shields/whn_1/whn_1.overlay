@@ -5,22 +5,22 @@
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
         input-gpios
-            = <&gpio0 22 GPIO_ACTIVE_LOW>  // F7
-            , <&gpio0 24 GPIO_ACTIVE_LOW>  // F3
-            , <&gpio1 0 GPIO_ACTIVE_LOW>   // F1
-            , <&gpio0 11 GPIO_ACTIVE_LOW>  // D
-            , <&gpio1 4 GPIO_ACTIVE_LOW>   // S
-            , <&gpio1 6 GPIO_ACTIVE_LOW>   // W
-            , <&gpio1 1 GPIO_ACTIVE_LOW>   // A
-            , <&gpio1 2 GPIO_ACTIVE_LOW>   // 功能键1 (模式切换)
-            , <&gpio1 7 GPIO_ACTIVE_LOW>   // 功能键2 (玩家切换)
-            , <&gpio0 9 GPIO_ACTIVE_LOW>   // I
-            , <&gpio0 10 GPIO_ACTIVE_LOW>  // O
-            , <&gpio1 11 GPIO_ACTIVE_LOW>  // P
-            , <&gpio1 13 GPIO_ACTIVE_LOW>  // H
-            , <&gpio1 15 GPIO_ACTIVE_LOW>  // J
-            , <&gpio0 2 GPIO_ACTIVE_LOW>   // K
-            , <&gpio0 29 GPIO_ACTIVE_LOW>  // L
+            = <&gpio0 22 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // F7
+            , <&gpio0 24 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // F3
+            , <&gpio1 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // F1
+            , <&gpio0 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // D
+            , <&gpio1 4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // S
+            , <&gpio1 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // W
+            , <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // A
+            , <&gpio1 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // 功能键1 (模式切换)
+            , <&gpio1 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // 功能键2 (玩家切换)
+            , <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // I
+            , <&gpio0 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // O
+            , <&gpio1 11 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // P
+            , <&gpio1 13 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // H
+            , <&gpio1 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // J
+            , <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>   // K
+            , <&gpio0 29 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>  // L
             ;
     };
 
