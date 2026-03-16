@@ -44,6 +44,7 @@
     chosen {
         zmk,physical-layout = &physical_layout0;
         zmk,kscan = &kscan0;
+        zephyr,display = &oled;
         zmk,display = &oled;
     };
 };
@@ -53,7 +54,14 @@
     clock-frequency = <400000>;
 
     oled: oled@3c {
-        compatible = "zmk,oled-display";
+        compatible = "solomon,ssd1306";
         reg = <0x3c>;
+        width = <128>;
+        height = <64>;
+        segment-offset = <0>;
+        page-offset = <0>;
+        display-offset = <0>;
+        multiplex-ratio = <63>;
+        prechargep = <0x22>;
     };
 };
